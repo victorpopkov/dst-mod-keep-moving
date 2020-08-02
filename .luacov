@@ -1,0 +1,11 @@
+return {
+  include = {
+    "modmain",
+    "scripts",
+  },
+  exclude = {
+    "spec",
+  },
+  includeuntestedfiles = true,
+  runreport = true,
+}
