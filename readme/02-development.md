@@ -27,8 +27,8 @@ To learn more, consider checking out the corresponding [Docker Hub][] image:
 ### Shell/Bash (Linux)
 
 ```shell script
-$ git clone https://github.com/victorpopkov/dst-mod-keep-following
-$ cd ./dst-mod-keep-following/
+$ git clone https://github.com/victorpopkov/dst-mod-keep-moving
+$ cd ./dst-mod-keep-moving/
 $ export DST_MODS="${HOME}/.steam/steam/steamapps/common/Don't Starve Together/mods/"
 $ docker run --rm -itv "$(pwd):/mod/" -v "${DST_MODS}:/mods/" viktorpopkov/dst-mod
 ```
@@ -36,8 +36,8 @@ $ docker run --rm -itv "$(pwd):/mod/" -v "${DST_MODS}:/mods/" viktorpopkov/dst-m
 ### PowerShell (Windows)
 
 ```powershell
-PS C:\> git clone https://github.com/victorpopkov/dst-mod-keep-following
-PS C:\> cd .\dst-mod-keep-following\
+PS C:\> git clone https://github.com/victorpopkov/dst-mod-keep-moving
+PS C:\> cd .\dst-mod-keep-moving\
 PS C:\> $Env:DST_MODS = "C:\Program Files (x86)\Steam\steamapps\common\Don't Starve Together\mods\"
 PS C:\> docker run --rm -itv "${PWD}:/mod/" -v "$($Env:DST_MODS):/mods/" viktorpopkov/dst-mod
 ```
@@ -86,6 +86,7 @@ encourage following some of the best practices:
 - [Busted][]
 - [EditorConfig][]
 - [GNU Make][]
+- [LCOV][]
 - [LDoc][]
 - [LuaCov][]
 - [Luacheck][]
@@ -107,14 +108,24 @@ $ sudo luarocks install ldoc
 $ sudo luarocks install luacheck
 $ sudo luarocks install luacov
 $ sudo luarocks install luacov-console
+$ sudo luarocks install luacov-reporter-lcov
+$ sudo luarocks install cluacov
+```
+
+##### [LCOV][]
+
+```shell script
+$ git clone https://github.com/linux-test-project/lcov.git
+$ cd lcov/
+$ sudo make install
 ```
 
 ##### [Prettier][]
 
 ```shell script
-$ npm install -g prettier
+$ npm install -g prettier @prettier/plugin-xml
 # or
-$ yarn global add prettier
+$ yarn global add prettier @prettier/plugin-xml
 ```
 
 ##### [ktools][]
@@ -173,7 +184,7 @@ For communication, I RECOMMEND using [Slack][].
 For project management, I use [Trello][], the [Agile][] software development
 approach along with the [Scrum][] structure.
 
-The board: [https://trello.com/b/De8QnsZd/dst-mod-keep-following][]
+The board: [https://trello.com/b/oC3p02G5/dst-mod-keep-moving][]
 
 #### Labels
 
@@ -308,6 +319,7 @@ Please use 'make <target>' where '<target>' is one of:
    modicon        to pack modicon
    release        to update version
    test           to run Busted tests
+   testclean      to clean up after tests
    testcoverage   to print the tests coverage report
    testlist       to list all existing tests
    uninstall      to uninstall the mod
@@ -327,8 +339,9 @@ Please use 'make <target>' where '<target>' is one of:
 [github]: https://github.com/
 [gnu make]: https://www.gnu.org/software/make/
 [https://hub.docker.com/r/viktorpopkov/dst-mod]: https://hub.docker.com/r/viktorpopkov/dst-mod
-[https://trello.com/b/de8qnszd/dst-mod-keep-following]: https://trello.com/b/De8QnsZd/dst-mod-keep-following
+[https://trello.com/b/oc3p02g5/dst-mod-keep-moving]: https://trello.com/b/oC3p02G5/dst-mod-keep-moving
 [ktools]: https://github.com/nsimplex/ktools
+[lcov]: http://ltp.sourceforge.net/coverage/lcov.php
 [ldoc]: https://stevedonovan.github.io/ldoc/
 [lua style guide]: https://github.com/luarocks/lua-style-guide
 [lua]: https://www.lua.org/
