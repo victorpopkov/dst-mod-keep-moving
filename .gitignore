@@ -17,13 +17,15 @@ luacov.*
 # general
 .github/slack*.json
 busted.out
+coverage/
 description.txt
+lcov.info
 modsettings.lua
 workshop/
 
 # doc
 doc/*
 !doc/.dockerignore
-!doc/Dockerfile
 !doc/docker-stack.yml
+!doc/Dockerfile
 !doc/ldoc/
