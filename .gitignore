@@ -19,6 +19,7 @@ luacov.*
 busted.out
 coverage/
 description.txt
+exported/**/*.zip
 lcov.info
 modsettings.lua
 workshop/
