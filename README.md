@@ -24,13 +24,16 @@ To stop following use `WASD` movement keys, `SPACEBAR` action key or click `LMB`
 Don't like the default behaviour? Choose your own configuration to match your
 needs:
 
-| Configuration      | Default  | Description                                            |
-| ------------------ | -------- | ------------------------------------------------------ |
-| **Action key**     | _LShift_ | Key used for triggering moving actions                 |
-| **Direct moving**  | _Yes_    | Should the direct moving be enabled?                   |
-| **On-road moving** | _Yes_    | Should the on-road moving be enabled?                  |
-| **Hide changelog** | _Yes_    | Should the changelog in the mod description be hidden? |
-| **Debug**          | _No_     | Should the debug mode be enabled?                      |
+| Configuration               | Default  | Description                                        |
+| --------------------------- | -------- | -------------------------------------------------- |
+| **Action key**              | _LShift_ | Key used for triggering moving actions             |
+| **Reverse actions**         | _Yes_    | Should the LMB and RMB moving actions be reversed? |
+| **Mouse dragging check**    | _Yes_    | Should the mouse dragging check be enabled?        |
+| **Direct moving**           | _Yes_    | Should the direct moving be enabled?               |
+| **On-road moving**          | _Yes_    | Should the on-road moving be enabled?              |
+| **On-road points**          | _Yes_    | Should the on-road points be enabled?              |
+| **On-road points lighting** | _Yes_    | Should the on-road points lighting be enabled?     |
+| **Debug**                   | _No_     | Should the debug mode be enabled?                  |
 
 ## Roadmap
 
