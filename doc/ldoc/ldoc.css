@@ -919,6 +919,7 @@ pre code {
 
 table.function_list td.name {
   max-width: 420px;
+  min-width: 360px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
