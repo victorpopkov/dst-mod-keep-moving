@@ -70,11 +70,13 @@ files["modmain.lua"] = {
 
   -- globals
   globals = {
+    "Assets",
     "GLOBAL",
   },
   read_globals = {
     "AddAction",
     "AddComponentPostInit",
+    "Asset",
     "GetModConfigData",
     "modname",
   },
@@ -90,6 +92,7 @@ files["scripts/**/*.lua"] = {
   globals = {
     -- general
     "_G",
+    "MOD_KEEP_MOVING",
 
     -- project
     "Debug",
@@ -98,6 +101,7 @@ files["scripts/**/*.lua"] = {
     -- general
     "anglediff",
     "BufferedAction",
+    "CreateEntity",
     "KnownModIndex",
     "RoadManager",
     "RunInSandboxSafe",
@@ -108,7 +112,9 @@ files["scripts/**/*.lua"] = {
 
     -- constants
     "ACTIONS",
+    "ANIM_ORIENTATION",
     "FRAMES",
+    "LAYER_BACKGROUND",
     "RPC",
 
     -- threads
