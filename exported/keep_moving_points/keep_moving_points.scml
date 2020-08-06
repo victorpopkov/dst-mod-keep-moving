@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="images">
+        <file id="0" name="images/point.png" width="64" height="64" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="images/checkpoint.png" width="96" height="96" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="images/circle.png" width="128" height="128" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="keep_moving_points">
+        <animation id="0" name="point_enter" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="500">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="point">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="0.5" scale_y="0.5"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="2" time="500" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="0.5" scale_y="0.5"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="point_exit" length="250" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="point">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="0.5" scale_y="0.5"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="0.05" scale_y="0.05"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="checkpoint_enter" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="500">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="checkpoint">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="1" angle="0"/>
+                </key>
+                <key id="2" time="500" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="checkpoint_anim" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="500">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="1000">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="checkpoint">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+                <key id="2" time="1000" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="circle">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" scale_x="0.51" scale_y="0.51"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="2"/>
+                </key>
+                <key id="2" time="1000" spin="0">
+                    <object folder="0" file="2" scale_x="0.51" scale_y="0.51"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="4" name="checkpoint_exit" length="250" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="checkpoint">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.7" scale_y="0.7"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="0.05" scale_y="0.05"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
