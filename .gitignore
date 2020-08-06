@@ -19,10 +19,14 @@ luacov.*
 busted.out
 coverage/
 description.txt
+exported/**/*.autosave.scml
 exported/**/*.zip
 lcov.info
 modsettings.lua
 workshop/
+
+# anim
+!anim/**/*.zip
 
 # doc
 doc/*
