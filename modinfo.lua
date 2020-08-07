@@ -64,27 +64,27 @@ local key_list = CreateKeyList()
 
 local boolean = {
     { description = "Yes", data = true },
-    { description = "No", data = false }
+    { description = "No", data = false },
 }
 
 local reverse_actions = {
     { description = "Yes", data = true, hover = "Yes: RMB for direct moving and LMB for on-road moving" },
-    { description = "No", data = false, hover = "No: LMB for direct moving and RMB for on-road moving" }
+    { description = "No", data = false, hover = "No: LMB for direct moving and RMB for on-road moving" },
 }
 
 local mouse_dragging_check = {
     { description = "Yes", data = true, hover = "Yes: moving actions are disabled when the mouse dragging is detected" },
-    { description = "No", data = false, hover = "No: moving actions are always enabled ignoring the mouse dragging" }
+    { description = "No", data = false, hover = "No: moving actions are always enabled ignoring the mouse dragging" },
 }
 
 local on_road_points = {
     { description = "Yes", data = true, hover = "Yes: on-road moving positions are visible" },
-    { description = "No", data = false, hover = "No: on-road moving positions are NOT visible" }
+    { description = "No", data = false, hover = "No: on-road moving positions are NOT visible" },
 }
 
 local on_road_points_lighting = {
     { description = "Yes", data = true, hover = "Yes: on-road moving positions are highlighted when enabled" },
-    { description = "No", data = false, hover = "No: on-road moving positions are NOT highlighted when enabled" }
+    { description = "No", data = false, hover = "No: on-road moving positions are NOT highlighted when enabled" },
 }
 
 configuration_options = {
