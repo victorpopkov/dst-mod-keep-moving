@@ -6,7 +6,7 @@ describe("KeepMoving", function()
     local _os
 
     -- before_each initialization
-    local inst, leader
+    local inst
     local KeepMoving, keepmoving
 
     setup(function()
@@ -29,6 +29,7 @@ describe("KeepMoving", function()
         DebugSpyTerm()
 
         -- globals
+        _G.os = _os
         _G.TEST = false
         _G.TheWorld = nil
     end)
