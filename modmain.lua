@@ -374,7 +374,7 @@ local function PlayerControllerPostInit(_self, _player)
     _self.OnControl = NewOnControl
     _self.OnLeftClick = NewOnLeftClick
     _self.OnRightClick = NewOnRightClick
-    --_self.OnUpdate = _MOUSE_DRAGGING_CHECK and NewOnUpdate or _self.OldOnUpdate
+    _self.OnUpdate = _MOUSE_DRAGGING_CHECK and NewOnUpdate or _self.OldOnUpdate
 
     DebugInit("PlayerControllerPostInit")
 end
