@@ -86,9 +86,11 @@ ldoc:
 lint:
 	@EXIT=0; \
 		printf "Luacheck:\n\n"; luacheck . --exclude-files="here/" || EXIT=$$?; \
-		printf "\nPrettier (Markdown):\n\n"; prettier --check ./**/*.md || EXIT=$$?; \
-		printf "\nPrettier (XML):\n\n"; prettier --check ./**/*.xml || EXIT=$$?; \
-		printf "\nPrettier (YAML):\n\n"; prettier --check ./**/*.yml || EXIT=$$?; \
+		printf "\nPrettier:\n\n"; prettier --check \
+			"./**/*.md" \
+			"./**/*.xml" \
+			"./**/*.yml" \
+		|| EXIT=$$?; \
 		exit $${EXIT}
 
 modicon:
