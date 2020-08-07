@@ -67,6 +67,7 @@ install:
 		--exclude 'description.txt*' \
 		--exclude 'doc/' \
 		--exclude 'exported/' \
+		--exclude 'lcov.info' \
 		--exclude 'luacov*' \
 		--exclude 'Makefile' \
 		--exclude 'modicon.png' \
@@ -122,6 +123,7 @@ uninstall:
 workshop:
 	@rm -Rf ./workshop/
 	@mkdir -p ./workshop/
+	@cp -R ./anim/ ./workshop/
 	@cp -R ./LICENSE ./workshop/LICENSE
 	@cp -R ./modicon.tex ./workshop/
 	@cp -R ./modicon.xml ./workshop/
