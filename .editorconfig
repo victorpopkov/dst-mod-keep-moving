@@ -13,6 +13,10 @@ trim_trailing_whitespace = true
 indent_size = 4
 max_line_length = 100
 
+# config.ld
+[config.ld]
+indent_size = 4
+
 # XML
 [*.xml]
 indent_size = 4
